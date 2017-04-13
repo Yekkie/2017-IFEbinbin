@@ -1,5 +1,5 @@
 # 任务一：零基础JavaScript编码（一）
-[demo](https://www.freecodecamp.cn/zhouxiaoyu1994)
+[demo](https://zhouxiaoyu1994.github.io/2017-IFEbinbin/task-1/index.html)
 ## 任务目的
 - JavaScript初体验
 - 初步明白JavaScript的简单基本语法，如变量、函数
