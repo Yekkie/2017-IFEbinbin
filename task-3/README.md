@@ -120,25 +120,29 @@ init();
   - 获取li标签中的文本，获取节点及其后代节点文本的语法有 textContent（可以获取所有元素的内容，包括<script>和<style>） 和 innerText（可以感知样式，不会返隐隐藏元素的文本内容），因为要忽视li标签中的css样式，所以这里选择 innerText 方法。
   - 提取关键字，并放入数组中。这里使用 substr(start,length) 方法，第一个参数是要抽取的子串的起始下标，负数则从末尾算起。第二个参数为抽取的子串的长度。然后再用 push() 方法，依次放入数组。
 
-  `var node = [text.substr(0, 2), text.substr(-2, 2)];`
+    `var node = [text.substr(0, 2), text.substr(-2, 2)];`
+
 - 排序
  使用sort()方法进行排序。
 
  `data.sort(function(a,b){ return a[1] - b[1];});`
+
 - 打印
   - 首先获取resort列表。
   - 创建for循环。
   - 创建新的li标签。
     - 使用createElement()方法创建分别创建li标签和b标签。
 
-   `var oLi = document.createElement('li');`
+    `var oLi = document.createElement('li');`
 
-   `var oB = document.createElement('b');`
+    `var oB = document.createElement('b');`
+
     - 按照任务描述，创建一个字符串变量。
-    
-   `var arr = ["一","二","三","四","五","六","七"];`
 
-   `var liText = '第' + arr[i] + '名：' + data[i][0] +"，" + '空气质量：';`
+    `var arr = ["一","二","三","四","五","六","七"];`
+
+    `var liText = '第' + arr[i] + '名：' + data[i][0] +"，" + '空气质量：';`
+    
     - 用appendChild()方法，将字符串变量，赋值给li标签。
 
      ```
