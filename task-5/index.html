@@ -82,30 +82,7 @@
             }
         }
         //排序
-        function nextChildNode(node,clazz,tagName){
-            var count= node.childElementCount;
-            for(var i=0;i<count;i++){
-                if(node==undefined || node.children[i]==undefined){
-                    continue;
-                }
-                if(clazz){
-                    if(node.children[i].getAttribute('class')==clazz){
-                        return node.children[i];
-                    }
-                }else{
-                    if(node.children[i].tagName==tagName){
-                        return node.children[i];
-                    }
-                }
-
-
-            }
-        function sort(){
-            var arr =[];
-            for(var i=0;i<outNum.childNodes.length;i++){
-                return arr = outNum.childNodes.style.height.split("px")[0];
-            }
-        }
+       
         //按钮
         btnLeftIn.onclick = function(){insert("left");};
         btnRightIn.onclick = function(){insert("right");};
